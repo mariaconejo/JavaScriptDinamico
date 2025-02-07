@@ -1,0 +1,48 @@
+/* Estilos para el fondo y la tipografía */
+body {
+    background-image: url('../assets/flores-de-cerezo-4625.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+    color: #3e2723;
+}
+
+/* Estilos para la tarjeta */
+.card {
+    background-color: rgba(255, 248, 225, 0.9);
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border: 1px solid #f8bbd0;
+}
+
+/* Estilos para la imagen de perfil */
+.card img {
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #f48fb1;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el nombre del usuario */
+.card h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #ad1457;
+}
+
+/* Estilos para la información del usuario */
+.card p {
+    margin: 5px 0;
+    color: #6a1b9a;
+}
+
