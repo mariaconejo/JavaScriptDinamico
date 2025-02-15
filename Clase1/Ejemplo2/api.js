@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const userImage = document.createElement('img');
             userImage.src = 'https://i.pravatar.cc/'; // Imagen de ejemplo
             userImage.alt = 'Foto de perfil';
-
+            
             const userName = document.createElement('h2');
             userName.textContent = user.name;
 
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const userPhone = document.createElement('p');
             userPhone.textContent = `📞 ${user.phone}`;
-
+        ``
             // Agregar elementos a la tarjeta
             userCard.appendChild(userImage);
             userCard.appendChild(userName);

@@ -1,0 +1,117 @@
+
+body {
+    background-image: url('../../assets/flores-de-cerezo-4625.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+    color: #3e2723;
+}
+
+
+
+h1 {
+    color: #e91e63;
+    margin-top: 20px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.intro {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffe0eb;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    color: #e91e63;
+}
+
+.intro p {
+    text-align: justify;
+    color: #555;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button, input[type="submit"] {
+    background-color: #e91e63;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #a47d8b;
+    transform: scale(1.05);
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #e91e63;
+    border-radius: 25px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    flex: 1;
+}
+
+input[type="text"]:focus {
+    border-color: #d81b60;
+    box-shadow: 0 0 10px rgba(216, 27, 96, 0.5);
+}
+
+.container {
+    padding: 20px;
+    max-height: 80vh; /* Limita la altura del contenedor */
+    overflow-y: auto; /* Habilita el desplazamiento vertical dentro del contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.user-info {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.user-info img {
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-info p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.user-info span {
+    display: block;
+    font-size: 1em;
+    color: #888;
+}

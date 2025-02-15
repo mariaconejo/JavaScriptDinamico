@@ -1,6 +1,6 @@
 /* Estilos para el fondo y la tipografía */
 body {
-    background-image: url('../assets/flores-de-cerezo-4625.webp');
+    background-image: url('../../assets/flores-de-cerezo-4625.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
