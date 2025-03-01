@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const fetchCatsData = () => {
         return fetch(apiUrl)
             .then(response => {
-                if (!response.ok) {
+                if (!response.ok)  { // SI NO ESTA BIEN POR EL ! QUE SIGNIFICA NO
                     throw new Error('Network response was not ok');
                 }
                 return response.json();

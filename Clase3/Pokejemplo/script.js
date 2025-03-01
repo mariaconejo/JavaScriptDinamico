@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const fetchPokemonData = () => {
         return fetch(apiUrl)
             .then(response => {
-                if (!response.ok) {
+                if (!response.ok) { // NO ESTA BIEN POR ALGUNA RAZON
                     throw new Error('Network response was not ok');
                 }
                 return response.json();
@@ -38,12 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const pokemonName = document.createElement('h2');
             pokemonName.textContent = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
-            pokemonCard.appendChild(pokemonName);
+            pokemonCard.appendChild(pokemonName); 
 
             const pokemonType = document.createElement('p');
             pokemonType.textContent = `Tipo: ${pokemon.types.map(type => type.type.name).join(', ')}`;
-            pokemonCard.appendChild(pokemonType);
-
+            pokemonCard.appendChild(pokemonType); 
             const pokemonHeight = document.createElement('p');
             pokemonHeight.textContent = `Altura: ${pokemon.height / 10} m`; // La altura se da en decímetros
             pokemonCard.appendChild(pokemonHeight);
