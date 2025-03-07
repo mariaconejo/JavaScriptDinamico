@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal de Países</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="country-list" id="countryList">
+        <!-- Aquí se cargarán los países dinámicamente -->
+    </div>
+
+    <!-- Modal -->
+    <div id="countryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="countryName"></h2>
+            <img id="countryFlag" src="" alt="Bandera del país" class="country-flag">
+            <p><strong>Capital:</strong> <span id="countryCapital"></span></p>
+            <p><strong>Región:</strong> <span id="countryRegion"></span></p>
+            <p><strong>Población:</strong> <span id="countryPopulation"></span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
