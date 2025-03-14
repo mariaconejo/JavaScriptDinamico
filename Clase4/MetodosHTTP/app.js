@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const output = document.getElementById('output');
 
     document.getElementById('getButton').addEventListener('click', () => {
-        fetch('https://jsonplaceholder.typicode.com/posts/1')
+        fetch('https://jsonplaceholder.typicode.com/posts/')
             .then(response => {
                 if (response.ok) {
                     console.log('GET request successful: 200 OK');
@@ -28,9 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
+                userId: 1,
                 title: 'foo',
-                body: 'bar',
-                userId: 1
+                body: 'bar'
+                
             })
         })
             .then(response => {
